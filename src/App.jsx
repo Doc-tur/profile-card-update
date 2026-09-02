@@ -1,8 +1,10 @@
-import { avatarImage, coverImage, profilePicture } from "./assets"
-import FirstCard from "./components/FirstCard"
-import ProfileCard from "./components/ProfileCard"
+import { avatarImage, coverImage, profilePicture } from "./assets";
+import FirstCard from "./components/FirstCard";
+import ProfileCard from "./components/ProfileCard";
 
 function App() {
+  <h1>Emiabata Mukhtar O.</h1>;
+  <h2>Emiabata Mukhtar O.</h2>;
 
   const ProfileCards = [
     {
@@ -16,7 +18,7 @@ function App() {
       price: "NGN 1000,000",
       hour: "1 hour",
       period: "summer",
-      dark: true
+      dark: true,
     },
     {
       name: "Mr tobi",
@@ -29,9 +31,9 @@ function App() {
       price: "NGN 1000,000",
       hour: "1 hour",
       period: "summer",
-      dark: true
-    }
-  ]
+      dark: true,
+    },
+  ];
 
   return (
     <>
@@ -55,10 +57,8 @@ function App() {
       ))}
 
       <FirstCard />
-
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
