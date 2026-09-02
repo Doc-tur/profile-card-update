@@ -1,6 +1,7 @@
 import { avatarImage, coverImage, profilePicture } from "./assets";
 import FirstCard from "./components/FirstCard";
 import ProfileCard from "./components/ProfileCard";
+import Card from "./components/Card";
 
 function App() {
   <h1>Emiabata Mukhtar O.</h1>;
@@ -56,7 +57,23 @@ function App() {
         />
       ))}
 
-      <FirstCard />
+      {/* <FirstCard /> */}
+
+      <Card title="Headline">
+        {/* children */}
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <FirstCard />
+        <table>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+        </table>
+        <form action="">
+          <input type="text" name="" id="" />
+        </form>
+      </Card>
     </>
   );
 }
