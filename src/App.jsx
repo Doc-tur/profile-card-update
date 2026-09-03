@@ -2,6 +2,7 @@ import { avatarImage, coverImage, profilePicture } from "./assets";
 import FirstCard from "./components/FirstCard";
 import ProfileCard from "./components/ProfileCard";
 import Card from "./components/Card";
+import Wallet from "./components/Wallet";
 
 function App() {
   <h1>Emiabata Mukhtar O.</h1>;
@@ -74,6 +75,8 @@ function App() {
           <input type="text" name="" id="" />
         </form>
       </Card>
+
+      <Wallet />
     </>
   );
 }

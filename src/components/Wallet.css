@@ -1,0 +1,520 @@
+* {
+  box-sizing: border-box;
+}
+
+.wallet-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+  background:
+    radial-gradient(circle at 15% 25%, #1464ff 0%, transparent 35%),
+    radial-gradient(circle at 80% 80%, #003cff 0%, transparent 35%),
+    linear-gradient(135deg, #06194c, #010816 70%);
+}
+
+/* Main wallet */
+.wallet {
+  width: 100%;
+  max-width: 920px;
+  min-height: 900px;
+
+  padding: 0 34px 34px;
+
+  border-radius: 55px;
+
+  background: linear-gradient(
+    180deg,
+    #0c255a 0%,
+    #0a1a43 45%,
+    #111a3b 100%
+  );
+
+  border: 2px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 40px 100px rgba(0, 0, 0, 0.65),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12);
+
+  overflow: hidden;
+}
+
+/* =========================
+   TOP BALANCE
+========================= */
+
+.wallet-top {
+  min-height: 510px;
+  margin: 0 -34px;
+
+  padding: 38px 60px 0;
+
+  position: relative;
+
+  border-radius: 50px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(95, 203, 255, 0.9),
+      transparent 45%
+    ),
+    linear-gradient(
+      145deg,
+      #2d9bed,
+      #144bd0 65%,
+      #153dba
+    );
+
+  box-shadow:
+    inset 0 -30px 50px rgba(0, 20, 100, 0.2);
+}
+
+/* Profile */
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile-img {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 28px;
+
+  background: white;
+
+  border: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Menu */
+
+.menu-btn {
+  position: absolute;
+  right: 60px;
+  top: 38px;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(20, 55, 150, 0.45);
+
+  color: white;
+  font-size: 27px;
+
+  cursor: pointer;
+}
+
+/* Balance */
+
+.balance {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.balance-label {
+  display: inline-block;
+
+  padding: 12px 25px;
+
+  border-radius: 30px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  background: rgba(30, 115, 205, 0.45);
+
+  font-size: 17px;
+  font-weight: 500;
+
+  box-shadow: inset 0 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+.balance h1 {
+  margin: 30px 0 0;
+
+  color: white;
+
+  font-size: clamp(45px, 6vw, 72px);
+  font-weight: 400;
+
+  letter-spacing: -2px;
+
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* People */
+
+.people {
+  position: absolute;
+
+  left: 50%;
+  bottom: -40px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.person {
+  width: 88px;
+  height: 88px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  font-size: 42px;
+
+  border: 6px solid rgba(255, 255, 255, 0.55);
+
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.25),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.green {
+  background: #b8ff9c;
+}
+
+.yellow {
+  background: #ffe5a5;
+}
+
+.pink {
+  background: #ffb1bb;
+}
+
+.orange {
+  background: #f8d8ad;
+}
+
+.blue {
+  background: #b6efff;
+}
+
+/* =========================
+   TRANSACTION
+========================= */
+
+.transaction {
+  margin-top: 80px;
+
+  padding: 28px 35px;
+
+  border-radius: 40px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(38, 55, 105, 0.8),
+    rgba(22, 34, 75, 0.8)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.1),
+    0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 18px;
+}
+
+.transaction-header a {
+  color: rgba(255, 255, 255, 0.75);
+
+  text-decoration: underline;
+
+  font-size: 17px;
+}
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dribbble-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f0dce9;
+
+  font-size: 34px;
+
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.transaction h3 {
+  margin: 0;
+
+  color: white;
+
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.transaction p {
+  margin: 6px 0 0;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 18px;
+}
+
+.transaction-info strong {
+  color: white;
+
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+
+.actions {
+  display: grid;
+
+  grid-template-columns: 110px 110px 1fr 1fr;
+
+  gap: 18px;
+
+  margin-top: 48px;
+}
+
+.round-btn,
+.action-btn {
+  height: 100px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  color: white;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.round-btn {
+  background: linear-gradient(
+    145deg,
+    #495b9e,
+    #19265d
+  );
+
+  font-size: 34px;
+
+  box-shadow:
+    inset 0 2px 10px rgba(255, 255, 255, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn {
+  background: linear-gradient(
+    145deg,
+    #45589e,
+    #25346f
+  );
+
+  font-size: 29px;
+}
+
+.action-btn span {
+  font-size: 32px;
+  margin-left: 5px;
+}
+
+.send {
+  background: linear-gradient(
+    135deg,
+    #29baff,
+    #0759df
+  );
+
+  box-shadow:
+    0 10px 30px rgba(0, 90, 255, 0.35),
+    inset 0 2px 10px rgba(255, 255, 255, 0.25);
+}
+
+.round-btn:hover,
+.action-btn:hover {
+  transform: translateY(-4px);
+
+  filter: brightness(1.12);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+  .wallet-page {
+    padding: 10px;
+  }
+
+  .wallet {
+    min-height: auto;
+
+    padding: 0 20px 25px;
+
+    border-radius: 35px;
+  }
+
+  .wallet-top {
+    margin: 0 -20px;
+
+    padding: 25px 30px 0;
+
+    min-height: 430px;
+
+    border-radius: 35px;
+  }
+
+  .menu-btn {
+    right: 30px;
+    top: 25px;
+  }
+
+  .balance {
+    margin-top: 40px;
+  }
+
+  .balance h1 {
+    font-size: 42px;
+  }
+
+  .people {
+    gap: 5px;
+    bottom: -25px;
+  }
+
+  .person {
+    width: 55px;
+    height: 55px;
+
+    font-size: 27px;
+
+    border-width: 4px;
+  }
+
+  .transaction {
+    margin-top: 55px;
+
+    padding: 22px;
+
+    border-radius: 28px;
+  }
+
+  .transaction h3 {
+    font-size: 18px;
+  }
+
+  .transaction p {
+    font-size: 14px;
+  }
+
+  .transaction-info strong {
+    font-size: 19px;
+  }
+
+  .dribbble-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 25px;
+  }
+
+  .actions {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 25px;
+  }
+
+  .round-btn,
+  .action-btn {
+    height: 70px;
+
+    font-size: 20px;
+  }
+
+  .action-btn span {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .people {
+    gap: 2px;
+  }
+
+  .person {
+    width: 48px;
+    height: 48px;
+
+    font-size: 23px;
+  }
+
+  .balance h1 {
+    font-size: 35px;
+  }
+
+  .transaction {
+    padding: 17px;
+  }
+
+  .transaction-left {
+    gap: 10px;
+  }
+}
