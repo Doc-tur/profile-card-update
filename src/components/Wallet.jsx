@@ -46,7 +46,7 @@ export default function Wallet() {
 
               <div>
                 <h3>Dribbble Pro</h3>
-                <p>Jan 17&nbsp; • &nbsp;20:12</p>
+                <p>Sep 3 • 12:30</p>
               </div>
             </div>
 
