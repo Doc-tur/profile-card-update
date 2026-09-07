@@ -3,10 +3,13 @@ import FirstCard from "./components/FirstCard";
 import ProfileCard from "./components/ProfileCard";
 import Card from "./components/Card";
 import Wallet from "./components/Wallet";
+import Dashboard from "./components/Dashboard";
+import LoginPage from "./components/LoginPage";
+import { useState } from "react";
 
 function App() {
-  <h1>Emiabata Mukhtar O.</h1>;
-  <h2>Emiabata Mukhtar O.</h2>;
+  const [count, setCount] = useState(0);
+  const [text, setText] = useState("");
 
   const ProfileCards = [
     {
@@ -37,8 +40,13 @@ function App() {
     },
   ];
 
+  const isLogin = true;
+
   return (
     <>
+      <h1>Emiabata Mukhtar O.</h1>
+      <h2>Emiabata Mukhtar O.</h2>
+
       <h1>OluwatobilobaGp</h1>
 
       {ProfileCards.map((profilecard, index) => (
@@ -60,17 +68,26 @@ function App() {
 
       {/* <FirstCard /> */}
 
+      {isLogin && (<p>Welcome back, Emiabata Mukhtar O.</p>)}
+
+      {isLogin ? <p> You are logged in </p> : <p> You are not logged in </p>}
+
+      {isLogin ? <Dashboard /> : <LoginPage />}
+
+      <button onClick={ () => { setCount(count + 1); console.log(count); } }>
+        Click Me
+      </button>
+
+      <div>{count}</div>
+
+      <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+
+      <div>{text}</div>
       <Card title="Headline">
         {/* children */}
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
         <FirstCard />
-        <table>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-        </table>
+        
         <form action="">
           <input type="text" name="" id="" />
         </form>
