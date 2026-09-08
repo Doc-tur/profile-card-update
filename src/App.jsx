@@ -10,6 +10,7 @@ import { useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
+  const [toDo, setToDo] = useState("");
 
   const ProfileCards = [
     {
@@ -83,6 +84,14 @@ function App() {
       <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
 
       <div>{text}</div>
+
+      <input type="text" value={toDo} onChange={(e) => setToDo(e.target.value)} />
+      <button onClick={() => { setToDo(text); console.log(toDo); }}>
+        Add ToDo
+      </button>
+
+      <div>{toDo}</div>
+
       <Card title="Headline">
         {/* children */}
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
