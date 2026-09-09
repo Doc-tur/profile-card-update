@@ -6,11 +6,12 @@ import Wallet from "./components/Wallet";
 import Dashboard from "./components/Dashboard";
 import LoginPage from "./components/LoginPage";
 import { useState } from "react";
+import Todo from "./components/Todo";
+import Checkout from "./components/Checkout";
 
 function App() {
   const [count, setCount] = useState(0);
   const [text, setText] = useState("");
-  const [toDo, setToDo] = useState("");
 
   const ProfileCards = [
     {
@@ -85,12 +86,7 @@ function App() {
 
       <div>{text}</div>
 
-      <input type="text" value={toDo} onChange={(e) => setToDo(e.target.value)} />
-      <button onClick={() => { setToDo(text); console.log(toDo); }}>
-        Add ToDo
-      </button>
-
-      <div>{toDo}</div>
+      <Todo />
 
       <Card title="Headline">
         {/* children */}
@@ -103,6 +99,8 @@ function App() {
       </Card>
 
       <Wallet />
+
+      <Checkout />
     </>
   );
 }
