@@ -8,6 +8,7 @@ import LoginPage from "./components/LoginPage";
 import { useState } from "react";
 import Todo from "./components/Todo";
 import Checkout from "./components/Checkout";
+import { ProductCard } from "./components/ProductCard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -101,6 +102,10 @@ function App() {
       <Wallet />
 
       <Checkout />
+
+      <ProductCard productId={2} />
+      <ProductCard productId={4} />
+
     </>
   );
 }
