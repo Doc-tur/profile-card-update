@@ -75,7 +75,7 @@ const Steps = () => {
           </div>
 
           <div>
-            <strong>24 Lakh</strong>
+            <strong>24/7</strong>
             <span>Learning Hours</span>
           </div>
 

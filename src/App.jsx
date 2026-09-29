@@ -7,7 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import LoginPage from "./pages/LoginPage";
 // import { useState } from "react";
 import Todo from "./pages/Todo";
-// import Checkout from "./pages/Checkout";
+import Checkout from "./pages/Checkout";
 import { ProductCard } from "./pages/ProductCard";
 import Form from "./pages/Form";
 import { Routes, Route } from "react-router-dom";
@@ -57,6 +57,7 @@ function App() {
         <Route path="/todo" element={<Todo />} />
         <Route path="/form" element={<Form />} />
         <Route path="/wallet" element={<Wallet />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/firstcard" element={<FirstCard />} />
         <Route path="/profilecard" element={<ProfileCard />} />
         <Route path="/productcard" element={<ProductCard />} />

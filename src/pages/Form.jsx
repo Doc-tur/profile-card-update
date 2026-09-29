@@ -85,7 +85,7 @@ export default function Form() {
   return (
     <form className="signup-form" onSubmit={handleSubmit}>
       <h2> Create Account </h2>
-            <div className="form-group">
+            <div className="form-groups">
 
                 {/* Name Field */}
                 <label htmlFor="Name">Name</label>
@@ -99,7 +99,7 @@ export default function Form() {
                 {errors.name && <span className="error">{errors.name}</span>}
               </div>
 
-            <div className="form-group">
+            <div className="form-groups">
 
 
                 {/* Email Field */}
@@ -117,7 +117,7 @@ export default function Form() {
               </div>
 
               
-              <div className="form-group">
+              <div className="form-groups">
 
                 {/* Password Field */}
                 <label htmlFor="Password">Password</label>
@@ -131,7 +131,7 @@ export default function Form() {
                 {errors.password && <span className="error">{errors.password}</span>}
                 </div>
 
-                <div className="form-group">
+                <div className="form-groups">
 
                 {/* Confirm Password Field */}
                 <label htmlFor="ConfirmPassword">Confirm Password</label>
@@ -146,7 +146,7 @@ export default function Form() {
 
             </div>
 
-            <div className="form-group">
+            <div className="form-groups">
                 <button type="submit">Submit</button>
 
                 {submitted && <span className="success">Form submitted successfully!</span>}
