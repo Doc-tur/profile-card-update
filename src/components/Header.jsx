@@ -7,7 +7,7 @@ const Header = () => {
 
       <nav className="nav-links">
         <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="../LandingPage.jsx">About</a>
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
         <a href="#resources">Resources</a>

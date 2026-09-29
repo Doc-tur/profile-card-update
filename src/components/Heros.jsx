@@ -1,6 +1,6 @@
-import heroPerson from "../assets/hero-person.jpg";
+import { studentImage } from "../assets/index";
 
-const Hero = () => {
+const Heros = () => {
   return (
     <section className="hero" id="home">
 
@@ -69,7 +69,7 @@ const Hero = () => {
         <div className="glow-circle"></div>
 
         <img
-          src={heroPerson}
+          src={ studentImage }
           alt="Learn@House instructor"
           className="hero-person"
         />
@@ -86,4 +86,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Heros;

@@ -1,5 +1,5 @@
 import Header from "./Header";
-import Hero from "./Hero";
+import Heros from "./Heros";
 import Reasons from "./Reasons";
 import Steps from "./Steps";
 import Courses from "./Courses";
@@ -9,7 +9,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <Header />
-      <Hero />
+      <Heros />
       <Reasons />
       <Steps />
       <Courses />

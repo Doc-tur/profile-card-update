@@ -26,7 +26,7 @@ a {
 }
 
 .landing-page {
-  width: 100%;
+  /* width: 100%; */
   overflow: hidden;
 }
 
@@ -344,7 +344,7 @@ a {
 }
 
 .star-one {
-  left: 12%;
+  left: 9%;
   top: 38%;
 }
 
