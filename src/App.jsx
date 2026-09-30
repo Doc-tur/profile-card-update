@@ -5,6 +5,11 @@ import Form from "./pages/Form";
 import HomePage from "./pages/HomePage";
 import { Routes, Route, createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layouts/Layout";
+import AboutUsPage from "./pages/AboutUsPage";
+import ContactUsPage from "./pages/ContactUsPage";
+import PricingPage from "./pages/PricingPage";
+import ResourcesPage from "./pages/ResourcesPage";
+import ServicesPage from "./pages/ServicesPage";
 
 function App() {
 
@@ -17,7 +22,12 @@ function App() {
         {path: "dashboard", element: <Dashboard />},
         {path: "login", element: <LoginPage />},
         {path: "todo", element: <Todo />},
-        {path: "form", element: <Form />}
+        {path: "form", element: <Form />},
+        {path: "about", element: <AboutUsPage />},
+        {path: "contact", element: <ContactUsPage />},
+        {path: "pricing", element: <PricingPage />},
+        {path: "resources", element: <ResourcesPage />},
+        {path: "services", element: <ServicesPage />}
       ],
     }
   ])

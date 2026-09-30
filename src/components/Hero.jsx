@@ -1,7 +1,7 @@
-import './Hero.css';
-import { studentImage } from '../assets/index';
+import "./Hero.css";
+import { profilePicture } from "../assets/index";
 
-const Hero = () => {
+export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-container">
@@ -21,7 +21,7 @@ const Hero = () => {
           
           <div className="hero-buttons">
             <button className="app-btn"> App Store</button>
-            <button className="app-btn">▶ Google Play</button>
+            <button className="app-btn">▶️ Google Play</button>
           </div>
           
           <div className="hero-stats">
@@ -43,7 +43,7 @@ const Hero = () => {
         {/* Right Side: Image */}
         <div className="hero-image-wrapper">
           <img 
-            src={ studentImage }
+            src={profilePicture}
             alt="Hero Portrait" 
             className="hero-img"
           />
@@ -51,7 +51,5 @@ const Hero = () => {
 
       </div>
     </section>
-  );
-};
-
-export default Hero;
+  )
+}

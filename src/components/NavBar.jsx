@@ -3,11 +3,11 @@ import './NavBar.css';
 const NavBar = () => {
   // Navigation links 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Pricing', href: '#' },
-    { name: 'Resources', href: '#' },
+    { name: 'Home', href: '/dashboard' },
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Pricing', href: '/pricing' },
+    { name: 'Resources', href: '/resources' },
   ];
 
   return (
@@ -30,7 +30,7 @@ const NavBar = () => {
 
         {/* Contact Button */}
         <div>
-          <button className="navbar-btn">Contact</button>
+          <a href="/contact"><button className="navbar-btn">Contact</button></a>
         </div>
         
       </div>
